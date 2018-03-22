@@ -1,0 +1,62 @@
+[
+  {
+    
+    "name": "The Crew",
+    "image": "/images/friends.jpg"
+  },
+  {
+    "name": "Ross",
+    "image": "/images/ross.jpg"
+     
+  },
+  {
+    
+    "name": "Rachel",
+    "image": "/images/rachel.jpg"
+  },
+  {
+    
+    "name": "Chandler",
+    "image": "/images/chandler.jpg"
+  },
+  {
+   
+    "name": "Monica",
+    "image": "/images/monica.jpg"
+  },
+  {
+   
+    "name": "Joey",
+    "image": "/images/joey.jpg"
+  },
+  {
+  
+    "name": "Phoebe",
+    "image": "/images/phoebe.jpg"
+  },
+  {
+   
+    "name": "Susan",
+    "image": "/images/susan.jpg"
+  },
+  {
+
+    "name": "Mike",
+    "image": "/images/mike.jpg"
+  },
+  {
+   
+    "name": "Gunther",
+    "image": "/images/gunther.jpg"
+  },
+  {
+    
+    "name": "Janice",
+    "image": "/images/janice.jpg"
+  },
+  {
+    
+    "name": "Emily",
+    "image":"/images/emily.jpg"
+  }
+]
