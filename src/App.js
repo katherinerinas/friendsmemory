@@ -14,31 +14,40 @@ class App extends Component {
   };
 
 imageClick = event => {
-  const currentFriend = event.target.alt;
+  let currentFriend = event.target.alt;
 
-  var FriendAlreadyClicked = () => {
-    for (let i = 0; i < this.state.clickedFriends.length; i++) {
-      if(currentFriend === i) {
-        return true;
-      }
-    }
-    return false;
+ this.setState({
+    clickedFriends:this.state.clickedFriends.push(currentFriend)
+   })
+   console.log(this.state.clickedFriends);
+  let FriendAlreadyClicked = () => {}
+
+ for (let i = 0; i < this.state.clickedFriends.length; i++) {
+      if(currentFriend === this.state.clickedFriends[i]) {
+        this.setState({})
+     //    return true;
+     //   }
+     // }
+     // return false;
+
   }
 
-  this.state.clickedFriends.indexOf(currentFriend) > -1;
+}
 
-console.log(FriendAlreadyClicked());
+  //console.log(FriendAlreadyClicked());
  if (FriendAlreadyClicked()) {
   this.setState({
-    friends: this.state.friends.sort(function(a,b) {
+  friends: this.state.friends.sort(function(a,b) {
+      //console.log("clicked");
       return 0.5-Math.random();
+  alert ("You've lost your marbles, Try again?");
     }),
 
     clickedFriends: [],
     score:0
  });
 
-alert ("You've lost your marbles, Try again?");
+
 
 } else {
   this.setState(
@@ -71,10 +80,12 @@ alert ("You've lost your marbles, Try again?");
 
 render() {
     return (
-      <Wrapper>
+      
       <div>
+      <Wrapper>
+      
       <Title>
-       score ={this.state.score}
+       score = {this.state.score}
        </Title>
            <div className="wrapper">
           {this.state.friends.map(friend => (
@@ -83,13 +94,12 @@ render() {
               id={friend.id}
               key={friend.id}
               image={friend.image}
-              
+              name={friend.name}
             />
           ))}
         </div>
-    </div>
-     
-</Wrapper>
+        </Wrapper>
+ </div>
     );
   }
 }
